@@ -1,0 +1,41 @@
+{
+  "version": "2026.07.25",
+  "updated": "2026-07-25",
+  "data": [
+    {
+      "id": "hot3000",
+      "title": "Reverse Tourism avoiding crowds",
+      "from": "douyin",
+      "angle": "Create 'Don't go to XX, try these N hidden spots near Beijing' series",
+      "icon": "?"
+    },
+    {
+      "id": "hot3001",
+      "title": "Heatwave Escape searches surging",
+      "from": "douyin",
+      "angle": "Create 'Beijing 40C? N cool routes to escape' series",
+      "icon": "?"
+    },
+    {
+      "id": "hot3002",
+      "title": "Family Outing searches exploding",
+      "from": "xiaohongshu",
+      "angle": "Create 'Where to take kids? Beijing top 5 family routes' photo collection",
+      "icon": "???????"
+    },
+    {
+      "id": "hot3003",
+      "title": "Healing Vlog BGM going viral",
+      "from": "douyin",
+      "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
+      "icon": "?"
+    },
+    {
+      "id": "hot3004",
+      "title": "Budget Travel topic hot",
+      "from": "xiaohongshu",
+      "angle": "Create 'Only XX yuan per person, Beijing day trip' series highlighting value",
+      "icon": "?"
+    }
+  ]
+}

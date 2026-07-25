@@ -1,0 +1,203 @@
+{
+  "version": "2026.07.25",
+  "updated": "2026-07-25",
+  "data": {
+    "bgms": [
+      {
+        "id": "bgm001",
+        "name": "星辰大海",
+        "artist": "黄霄云",
+        "platform": "抖音+小红书",
+        "scene": "旅行vlog / 风景大片 / 露营转场",
+        "mood": "治愈抒情",
+        "bpm": "中速85",
+        "heat": 1132,
+        "status": "持续热门",
+        "tip": "旋律起伏适中，适合美景转场。建议在日落/日出镜头切入副歌",
+        "duration": "副歌15s",
+        "link": "https://music.163.com/song/1834495867"
+      },
+      {
+        "id": "bgm002",
+        "name": "漠河舞厅",
+        "artist": "柳爽",
+        "platform": "抖音+小红书",
+        "scene": "人文叙事 / 市井烟火 / 古镇漫步",
+        "mood": "文艺叙事",
+        "bpm": "慢速72",
+        "heat": 1363,
+        "status": "长尾热门",
+        "tip": "文艺感拉满，适合古北水镇/胡同等有故事感的场景。开头钢琴前奏做铺垫",
+        "duration": "前奏20s",
+        "link": "https://music.163.com/song/1493892738"
+      },
+      {
+        "id": "bgm003",
+        "name": "孤勇者",
+        "artist": "陈奕迅",
+        "platform": "抖音",
+        "scene": "户外挑战 / 攀岩 / 长城徒步",
+        "mood": "励志燃向",
+        "bpm": "快速120",
+        "heat": 1497,
+        "status": "持续热门",
+        "tip": "副歌部分配登顶/攀爬画面，情绪高潮。前3秒用副歌切入抓注意力",
+        "duration": "副歌30s",
+        "link": "https://music.163.com/song/1902265573"
+      },
+      {
+        "id": "bgm004",
+        "name": "热爱105度的你",
+        "artist": "阿肆",
+        "platform": "小红书",
+        "scene": "亲子游 / 轻松户外 / 玩水",
+        "mood": "甜妹元气",
+        "bpm": "中速105",
+        "heat": 1180,
+        "status": "持续热门",
+        "tip": "元气满满，适合亲子露营/溯溪玩水。开头就进副歌，配合笑脸镜头",
+        "duration": "副歌15s",
+        "link": "https://music.163.com/song/1441758147"
+      },
+      {
+        "id": "bgm005",
+        "name": "一路生花",
+        "artist": "温奕心",
+        "platform": "抖音+小红书",
+        "scene": "赏花 / 春日徒步 / 花海航拍",
+        "mood": "治愈温暖",
+        "bpm": "中速80",
+        "heat": 940,
+        "status": "季节热门",
+        "tip": "花海/桃花/樱花内容适配度极高。副歌配花海航拍慢镜头",
+        "duration": "副歌20s",
+        "link": "https://music.163.com/song/1948557062"
+      },
+      {
+        "id": "bgm006",
+        "name": "小美满",
+        "artist": "周深",
+        "platform": "小红书",
+        "scene": "露营日常 / 周末vlog / 篝火",
+        "mood": "治愈温暖",
+        "bpm": "慢速70",
+        "heat": 825,
+        "status": "上升趋势",
+        "tip": "周深嗓音治愈感强，适合露营帐篷/篝火慢镜头。结尾渐弱留余韵",
+        "duration": "副歌15s",
+        "link": "https://music.163.com/song/2062769467"
+      },
+      {
+        "id": "bgm007",
+        "name": "红昭愿",
+        "artist": "音阙诗听",
+        "platform": "抖音",
+        "scene": "古风路线 / 长城 / 故宫",
+        "mood": "古风国潮",
+        "bpm": "中速95",
+        "heat": 1296,
+        "status": "持续热门",
+        "tip": "古风旋律配长城/故宫/古镇内容。副歌部分配航拍全景",
+        "duration": "副歌20s",
+        "link": "https://music.163.com/song/1334127082"
+      },
+      {
+        "id": "bgm008",
+        "name": "如愿",
+        "artist": "王菲",
+        "platform": "抖音+小红书",
+        "scene": "日出日落 / 星空延时 / 跨年",
+        "mood": "大气恢弘",
+        "bpm": "慢速68",
+        "heat": 1056,
+        "status": "持续热门",
+        "tip": "恢弘大气，适合日出/星空/跨年场景。副歌配日出延时摄影",
+        "duration": "副歌25s",
+        "link": "https://music.163.com/song/1906449803"
+      },
+      {
+        "id": "bgm009",
+        "name": "离别开出花",
+        "artist": "就是南方凯",
+        "platform": "抖音",
+        "scene": "公路旅行 / 自驾 / 草原",
+        "mood": "公路民谣",
+        "bpm": "中速90",
+        "heat": 882,
+        "status": "上升趋势",
+        "tip": "公路感强，配草原天路/自驾画面。副歌配车窗视角公路大片",
+        "duration": "副歌20s",
+        "link": "https://music.163.com/song/1995287683"
+      },
+      {
+        "id": "bgm010",
+        "name": "晚风心里吹",
+        "artist": "周深",
+        "platform": "小红书",
+        "scene": "夜晚露营 / 篝火 / 温泉",
+        "mood": "治愈抒情",
+        "bpm": "慢速65",
+        "heat": 748,
+        "status": "季节热门",
+        "tip": "晚风感强，适合夜间露营/温泉/篝火场景。配合星空镜头",
+        "duration": "副歌15s",
+        "link": "https://music.163.com/song/1945265770"
+      },
+      {
+        "id": "bgm011",
+        "name": "卡路里",
+        "artist": "火箭少女101",
+        "platform": "抖音",
+        "scene": "徒步挑战 / 登山 / 运动户外",
+        "mood": "活力运动",
+        "bpm": "快速128",
+        "heat": 729,
+        "status": "长尾热门",
+        "tip": "节奏感强，配徒步/登山/运动画面。副歌配登顶瞬间",
+        "duration": "副歌15s",
+        "link": "https://music.163.com/song/1297741566"
+      },
+      {
+        "id": "bgm012",
+        "name": "月亮照山川",
+        "artist": "海来阿木",
+        "platform": "抖音+小红书",
+        "scene": "草原 / 星空 / 夜间露营",
+        "mood": "治愈抒情",
+        "bpm": "中速78",
+        "heat": 624,
+        "status": "上升趋势",
+        "tip": "草原夜景适配度高。副歌配星空延时/篝火特写",
+        "duration": "副歌20s",
+        "link": "https://music.163.com/song/2062769468"
+      }
+    ],
+    "tips": [
+      {
+        "title": "First 3s: use drum beats to grab attention",
+        "desc": "Opening with drum/beat can boost completion rate 30%+",
+        "example": "Gu Yong Zhe chorus opening"
+      },
+      {
+        "title": "Chorus = climax visuals",
+        "desc": "Match chorus with summit/aerial/sunset shots for max emotion",
+        "example": "Ru Yuan chorus + sunrise timelapse"
+      },
+      {
+        "title": "Fade out ending = better saves",
+        "desc": "BGM fade-out + text sync beats hard cut, improves save rate",
+        "example": "Mohe Ballroom piano fade-out"
+      },
+      {
+        "title": "Beat-sync editing",
+        "desc": "Cut on BGM BPM for smoother flow",
+        "example": "85BPM ~0.7s per beat, 120BPM ~0.5s"
+      },
+      {
+        "title": "Multi-account matrix with same BGM",
+        "desc": "Post 3-5 clips with same BGM across different route footage",
+        "example": "Use Xing Chen Da Hai for grassland + Great Wall + camping"
+      }
+    ]
+  }
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0e0e10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="工作台">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<title>工作台 · 北京户外创作者</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <!-- 左侧导航 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">T</div>
+      <div class="brand-text">
+        <div class="brand-name">TRAEWork</div>
+        <div class="brand-sub">北京户外创作者工作台</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-item active" data-page="plan">
+        <span class="nav-icon">📋</span>
+        <span class="nav-label">每日选题工作流</span>
+      </button>
+      <button class="nav-item" data-page="calendar">
+        <span class="nav-icon">🗓️</span>
+        <span class="nav-label">内容日历</span>
+      </button>
+      <button class="nav-item" data-page="hot">
+        <span class="nav-icon">🔥</span>
+        <span class="nav-label">爆款热点·二创</span>
+      </button>
+      <button class="nav-item" data-page="copy">
+        <span class="nav-icon">✍️</span>
+        <span class="nav-label">双平台文案库</span>
+      </button>
+      <button class="nav-item" data-page="check">
+        <span class="nav-icon">🛡️</span>
+        <span class="nav-label">文案安检</span>
+      </button>
+      <button class="nav-item" data-page="bgm">
+        <span class="nav-icon">🎵</span>
+        <span class="nav-label">热点BGM</span>
+      </button>
+      <button class="nav-item" data-page="remix">
+        <span class="nav-icon">🎬</span>
+        <span class="nav-label">路线二创</span>
+      </button>
+      <button class="nav-item" data-page="interact">
+        <span class="nav-icon">💬</span>
+        <span class="nav-label">粉丝互动话术</span>
+      </button>
+      <button class="nav-item" data-page="review">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">数据复盘</span>
+      </button>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="user-chip">
+        <div class="avatar">BJ</div>
+        <div>
+          <div class="u-name">北京户外领队</div>
+          <div class="u-role">小红书 · 抖音</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 移动端底部 Tab -->
+  <nav class="tabbar" id="tabbar">
+    <button class="tab-item active" data-page="plan"><span class="tab-icon">📋</span><span class="tab-label">选题</span></button>
+    <button class="tab-item" data-page="calendar"><span class="tab-icon">🗓️</span><span class="tab-label">日历</span></button>
+    <button class="tab-item" data-page="hot"><span class="tab-icon">🔥</span><span class="tab-label">热点</span></button>
+    <button class="tab-item" data-page="copy"><span class="tab-icon">✍️</span><span class="tab-label">文案</span></button>
+    <button class="tab-item" data-page="check"><span class="tab-icon">🛡️</span><span class="tab-label">安检</span></button>
+    <button class="tab-item" data-page="bgm"><span class="tab-icon">🎵</span><span class="tab-label">BGM</span></button>
+    <button class="tab-item" data-page="remix"><span class="tab-icon">🎬</span><span class="tab-label">二创</span></button>
+    <button class="tab-item" data-page="interact"><span class="tab-icon">💬</span><span class="tab-label">话术</span></button>
+    <button class="tab-item" data-page="review"><span class="tab-icon">📊</span><span class="tab-label">复盘</span></button>
+  </nav>
+
+  <!-- 主内容区 -->
+  <main class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+        <div class="crumb">
+          <span class="crumb-home">北京户外工作台</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current" id="crumbCurrent">每日选题工作流</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="sync-btn" id="syncIcon" title="云端同步">☁️</button>
+        <div class="search"><span>🔍</span><input type="text" id="globalSearch" placeholder="搜索路线、文案、热点…"></div>
+        <button class="bell" aria-label="通知">🔔<span class="dot"></span></button>
+      </div>
+    </header>
+
+    <section class="content" id="content">
+
+      <!-- ====== 页面 1：每日选题工作流 ====== -->
+      <div class="page active" id="page-plan">
+        <!-- 顶部数据 -->
+        <div class="stats">
+          <div class="stat-card"><div class="stat-label">今日内容条数</div><div class="stat-value" id="stat-total">0</div><div class="stat-foot"><span class="up">目标 2 条/天</span></div></div>
+          <div class="stat-card"><div class="stat-label">已发布</div><div class="stat-value done" id="stat-done">0</div><div class="stat-foot">今日进度</div></div>
+          <div class="stat-card"><div class="stat-label">待完成</div><div class="stat-value pending" id="stat-pending">0</div><div class="stat-foot">抓紧行动</div></div>
+          <div class="stat-card"><div class="stat-label">完成率</div><div class="stat-value rate" id="stat-rate">0%</div><div class="progress"><div class="bar" id="rateBar"></div></div></div>
+        </div>
+
+        <!-- 今日时间表 -->
+        <!-- 今日任务看板（三栏） -->
+        <div class="board">
+          <section class="col"><div class="col-head"><div class="col-title"><span class="col-dot morning"></span>上午 · 发布</div></div><ul class="task-list" id="col-morning"></ul></section>
+          <section class="col"><div class="col-head"><div class="col-title"><span class="col-dot afternoon"></span>下午 · 热点二创</div></div><ul class="task-list" id="col-afternoon"></ul></section>
+          <section class="col"><div class="col-head"><div class="col-title"><span class="col-dot evening"></span>晚上 · 运营复盘</div></div><ul class="task-list" id="col-evening"></ul></section>
+        </div>
+
+        <div class="section-title" style="margin-top:18px">⏰ 今日时间表</div>
+        <div class="timeline" id="timeline"></div>
+
+        <!-- 选题决策表 -->
+        <div class="section-title" style="margin-top:18px">🧠 今日选题决策表</div>
+        <div class="idea-grid" id="topicGrid"></div>
+
+        <!-- 评论区挖宝 -->
+        <div class="section-title" style="margin-top:18px">💬 评论区选题金矿</div>
+        <div class="comment-mine" id="commentMine"></div>
+      </div>
+
+      <!-- ====== 页面 2：内容日历 ====== -->
+      <div class="page" id="page-calendar">
+        <div class="page-head"><h2>📅 北京户外年度内容日历</h2><div class="calendar-nav"><button id="calPrev">‹</button><span id="calMonth">7月</span><button id="calNext">›</button></div></div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+
+      <!-- ====== 页面 3：爆款热点·二创 ====== -->
+      <div class="page" id="page-hot">
+        <div class="page-head"><h2>🔥 爆款热点 · 二创工作台</h2><button class="new-btn ghost" id="newHotBtn">＋ 收录热点</button></div>
+        <div class="section-title">🔄 今日可追热点</div>
+        <div class="hot-list" id="hotList"></div>
+        <div class="section-title" style="margin-top:14px">🧪 二创方法速查</div>
+        <div class="remix-methods" id="remixMethods"></div>
+        <div class="section-title" style="margin-top:14px">🚫 违禁词速查表（发之前扫一眼）</div>
+        <div class="banned-table" id="bannedTable"></div>
+      </div>
+
+      <!-- ====== 页面 4：双平台文案库 ====== -->
+      <div class="page" id="page-copy">
+        <div class="page-head"><h2>✍️ 双平台文案库</h2><div class="search local"><span>🔍</span><input type="text" id="copySearch" placeholder="搜路线、月份…"></div></div>
+        
+        <!-- AI 生成区 -->
+        <div class="ai-gen-area">
+          <div class="ai-gen-title">🤖 AI 智能生成文案</div>
+          <div class="ai-gen-desc">输入任意路线名或地点，自动生成小红书+抖音双平台文案（自动过违禁词）</div>
+          <div class="ai-gen-input-row">
+            <input type="text" id="aiRouteInput" placeholder="例如：麻田岭露营、北灵山徒步、乌兰哈达火山…">
+            <button class="btn primary" id="aiGenBtn">✨ 生成文案</button>
+          </div>
+          <div class="ai-gen-result" id="aiGenResult"></div>
+        </div>
+
+        <div class="section-title">📚 文案库 · 小红书 & 抖音 对照</div>
+        <div class="copy-list" id="copyList"></div>
+      </div>
+
+      <!-- ====== 页面 5：文案安检 ====== -->
+      <div class="page" id="page-check">
+        <div class="page-head"><h2>🛡️ 文案安检 · 违禁词扫描</h2></div>
+        <div class="check-layout">
+          <!-- 左侧输入区 -->
+          <div class="check-input-area">
+            <div class="form-row">
+              <label>选择平台</label>
+              <div class="seg" id="scanPlatform">
+                <button class="seg-btn active" data-plat="both">两平台都查</button>
+                <button class="seg-btn" data-plat="xhs">📕 小红书</button>
+                <button class="seg-btn" data-plat="dy">🎵 抖音</button>
+              </div>
+            </div>
+            <div class="form-row">
+              <label>粘贴你要检查的文案（标题+正文+标签都放进来）</label>
+              <textarea id="scanInput" rows="10" placeholder="在这里粘贴小红书或抖音的文案内容…&#10;&#10;比如：&#10;北京最美冰瀑！白河峡谷徒步，拍出人生照片&#10;#白河峡谷 #冰瀑徒步 #北京户外 #组队"></textarea>
+            </div>
+            <div class="form-actions" style="justify-content:flex-start">
+              <button class="btn primary" id="scanBtn">🔍 开始扫描</button>
+              <button class="btn ghost" id="scanClear">清空</button>
+            </div>
+          </div>
+          <!-- 右侧结果区 -->
+          <div class="check-result-area" id="scanResult">
+            <div class="scan-hint">👆 左边粘贴文案，选择平台，点击扫描即可检查违禁词</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== 页面 6：热点BGM ====== -->
+      <div class="page" id="page-bgm">
+        <div class="page-head">
+          <h2>🎵 热点 BGM · 爆款背景音乐</h2>
+          <div class="bgm-filters">
+            <button class="bgm-filter active" data-filter="all">全部</button>
+            <button class="bgm-filter" data-filter="抖音">抖音</button>
+            <button class="bgm-filter" data-filter="小红书">小红书</button>
+            <button class="bgm-filter" data-filter="治愈">治愈</button>
+            <button class="bgm-filter" data-filter="励志">励志</button>
+            <button class="bgm-filter" data-filter="古风">古风</button>
+          </div>
+        </div>
+        <div class="bgm-list" id="bgmList"></div>
+        <div class="section-title" style="margin-top:18px">💡 BGM 使用技巧</div>
+        <div class="bgm-tips" id="bgmTips"></div>
+      </div>
+
+      <!-- ====== 页面 7：路线二创 ====== -->
+      <div class="page" id="page-remix">
+        <div class="page-head"><h2>🎬 路线二创 · 攻略转文案</h2></div>
+        
+        <div class="remix-layout">
+          <!-- 左侧：输入攻略 -->
+          <div class="remix-input-area">
+            <div class="remix-step">
+              <div class="remix-step-num">1</div>
+              <div class="remix-step-text">粘贴路线攻略（从其他博主/自己整理的素材都可以）</div>
+            </div>
+            <textarea id="remixInput" rows="12" placeholder="在这里粘贴路线攻略文本…&#10;&#10;例如：&#10;麻田岭位于河北蔚县，海拔2100米，高山草甸地貌。&#10;从北京出发约4小时车程。&#10;路线全程约12公里，累计爬升600米，难度中等。&#10;7-8月是花开季节，草甸上野花遍地。&#10;适合露营、徒步、摄影。&#10;注意事项：海拔较高需带保暖衣物，无信号需提前下载轨迹。"></textarea>
+            <div class="remix-options">
+              <div class="form-row" style="margin:0">
+                <label>内容风格</label>
+                <div class="seg" id="remixStyle">
+                  <button class="seg-btn active" data-style="种草">种草安利</button>
+                  <button class="seg-btn" data-style="攻略">实用攻略</button>
+                  <button class="seg-btn" data-style="vlog">vlog叙事</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn primary remix-gen-btn" id="remixGenBtn">✨ 一键生成双平台文案</button>
+          </div>
+          
+          <!-- 右侧：生成结果 -->
+          <div class="remix-result-area" id="remixResult">
+            <div class="scan-hint">👈 左边粘贴攻略，点「一键生成」即可获得可直接发布的小红书+抖音文案</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== 页面 9：粉丝互动话术 ====== -->
+      <div class="page" id="page-interact">
+        <div class="page-head">
+          <h2>💬 粉丝互动话术库</h2>
+          <div class="interact-filters">
+            <button class="interact-filter active" data-stage="all">全部</button>
+            <button class="interact-filter" data-stage="comment">评论回复</button>
+            <button class="interact-filter" data-stage="dm">私信引导</button>
+            <button class="interact-filter" data-stage="wechat">加微信</button>
+          </div>
+        </div>
+
+        <!-- 转化漏斗示意 -->
+        <div class="interact-funnel">
+          <div class="funnel-step">
+            <div class="funnel-icon">📝</div>
+            <div class="funnel-label">发布内容</div>
+            <div class="funnel-desc">吸引评论</div>
+          </div>
+          <div class="funnel-arrow">→</div>
+          <div class="funnel-step">
+            <div class="funnel-icon">💬</div>
+            <div class="funnel-label">评论回复</div>
+            <div class="funnel-desc">引导到私信</div>
+          </div>
+          <div class="funnel-arrow">→</div>
+          <div class="funnel-step">
+            <div class="funnel-icon">📨</div>
+            <div class="funnel-label">私信沟通</div>
+            <div class="funnel-desc">发送详情+报名</div>
+          </div>
+          <div class="funnel-arrow">→</div>
+          <div class="funnel-step highlight">
+            <div class="funnel-icon">🔗</div>
+            <div class="funnel-label">加微信</div>
+            <div class="funnel-desc">建立长期联系</div>
+          </div>
+        </div>
+
+        <!-- 平台切换 -->
+        <div class="interact-platform-tabs">
+          <button class="interact-plat-tab active" data-plat="xhs">📕 小红书话术</button>
+          <button class="interact-plat-tab" data-plat="dy">🎵 抖音话术</button>
+        </div>
+
+        <!-- 话术列表 -->
+        <div class="interact-list" id="interactList"></div>
+
+        <!-- 互动技巧 -->
+        <div class="section-title" style="margin-top:18px">💡 互动转化技巧</div>
+        <div class="interact-tips" id="interactTips"></div>
+      </div>
+
+      <!-- ====== 页面 8：数据复盘 ====== -->
+      <div class="page" id="page-review">
+        <div class="page-head"><h2>📊 数据复盘</h2><button class="new-btn ghost" id="newReviewBtn">＋ 新增复盘</button></div>
+        <div class="review-grid" id="reviewGrid"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- 弹层：热点 -->
+<div class="modal" id="hotModal">
+  <div class="modal-mask"></div>
+  <div class="modal-body">
+    <div class="modal-title">收录热点</div>
+    <div class="form-row"><label>热点标题</label><input id="hotTitle" type="text" placeholder="例如：某爆款BGM"></div>
+    <div class="form-row"><label>平台 / 来源</label><input id="hotFrom" type="text" placeholder="抖音 / 小红书 / B站…"></div>
+    <div class="form-row"><label>链接（可选）</label><input id="hotLink" type="text" placeholder="https://…"></div>
+    <div class="form-row"><label>二创角度</label><textarea id="hotAngle" rows="2" placeholder="你的切入角度"></textarea></div>
+    <div class="form-actions"><button class="btn ghost" data-close="hotModal">取消</button><button class="btn primary" id="hotSave">保存</button></div>
+  </div>
+</div>
+
+<!-- 弹层：复盘 -->
+<div class="modal" id="reviewModal">
+  <div class="modal-mask"></div>
+  <div class="modal-body">
+    <div class="modal-title">新增复盘</div>
+    <div class="form-row"><label>内容主题</label><input id="rvTopic" type="text" placeholder="例：坡峰岭红叶 vlog"></div>
+    <div class="form-row"><label>平台</label><div class="seg"><button class="seg-btn active" data-plat="小红书">小红书</button><button class="seg-btn" data-plat="抖音">抖音</button></div></div>
+    <div class="form-row two"><div><label>播放量</label><input id="rvViews" type="number" placeholder="0"></div><div><label>点赞</label><input id="rvLikes" type="number" placeholder="0"></div></div>
+    <div class="form-row two"><div><label>收藏</label><input id="rvSaves" type="number" placeholder="0"></div><div><label>评论</label><input id="rvComments" type="number" placeholder="0"></div></div>
+    <div class="form-row"><label>互动率 %</label><input id="rvRate" type="number" placeholder="0" step="0.1"></div>
+    <div class="form-row"><label>报名转化（私信数）</label><input id="rvLeads" type="number" placeholder="0"></div>
+    <div class="form-row"><label>复盘要点</label><textarea id="rvNote" rows="3" placeholder="哪些做得好，下次怎么改进…"></textarea></div>
+    <div class="form-actions"><button class="btn ghost" data-close="reviewModal">取消</button><button class="btn primary" id="rvSave">保存</button></div>
+  </div>
+</div>
+
+<!-- 弹层：文案详情 -->
+<div class="modal" id="copyModal">
+  <div class="modal-mask"></div>
+  <div class="modal-body copy-modal-body">
+    <div class="modal-title" id="copyModalTitle">文案详情</div>
+    <div class="copy-detail" id="copyDetail"></div>
+    <div class="form-actions"><button class="btn ghost" id="copyClose">关闭</button><button class="btn primary" id="copyCopyBtn">📋 一键复制</button></div>
+  </div>
+</div>
+
+<!-- 抽屉 -->
+<div class="drawer" id="drawer">
+  <div class="drawer-mask"></div>
+  <div class="drawer-body" id="drawerBody"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
