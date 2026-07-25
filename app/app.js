@@ -1,5 +1,5 @@
 /* ===================== 云端配置 ===================== */
-const CLOUD_BASE = './cloud-config'; // 相对路径，本地和GitHub Pages都能用
+const CLOUD_BASE = '../cloud-config'; // 从app目录到cloud-config的相对路径
 const CLOUD_FILES = ['calendar','banned-words','timeline','remix-methods','comments','topics','hots','reviews','hot-bgm','scripts'];
 
 /* ===================== 数据存储 ===================== */
