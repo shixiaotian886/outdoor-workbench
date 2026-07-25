@@ -441,3 +441,7 @@ h2{margin:0;font-size:18px;font-weight:600}
   .interact-card{padding:14px}
   .interact-tip-card{padding:12px}
 }
+
+/* 正文内容样式 */
+.copy-block .cb-body{font-size:13px;line-height:1.8;color:var(--text);background:rgba(255,255,255,.02);border-radius:8px;padding:10px 12px;margin:4px 0;border:1px solid var(--line);max-height:300px;overflow-y:auto}
+.copy-modal-body{max-width:640px}
