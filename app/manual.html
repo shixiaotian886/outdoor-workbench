@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北京户外创作者工作台 · 使用说明书</title>
+<style>
+:root{
+  --bg:#0f1014;--bg-2:#181a21;--bg-3:#1f2129;--text:#e4e4e7;--text-2:#a1a1aa;--text-3:#71717a;
+  --primary:#7c5cff;--accent:#22d3ee;--green:#22c55e;--yellow:#f59e0b;--red:#ef4444;
+  --line:#27282f;--radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;max-width:840px;margin:0 auto;padding:24px 20px 60px}
+h1{font-size:28px;font-weight:800;text-align:center;margin-bottom:8px;background:linear-gradient(135deg,#7c5cff,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.subtitle{text-align:center;color:var(--text-3);font-size:14px;margin-bottom:32px}
+h2{font-size:20px;font-weight:700;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--primary);color:var(--text)}
+h3{font-size:16px;font-weight:600;margin:24px 0 12px;color:var(--accent)}
+h4{font-size:14px;font-weight:600;margin:16px 0 8px;color:var(--text)}
+p{margin-bottom:10px;font-size:14px;color:var(--text-2)}
+ul,ol{margin:8px 0 16px 20px;font-size:14px;color:var(--text-2)}
+li{margin-bottom:6px}
+code{background:var(--bg-3);padding:2px 6px;border-radius:4px;font-size:13px;color:var(--accent)}
+.highlight{background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(34,211,238,.06));border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin:16px 0}
+.tip{background:rgba(34,197,94,.08);border-left:3px solid var(--green);border-radius:8px;padding:12px 16px;margin:12px 0}
+.warn{background:rgba(245,158,11,.08);border-left:3px solid var(--yellow);border-radius:8px;padding:12px 16px;margin:12px 0}
+.danger{background:rgba(239,68,68,.08);border-left:3px solid var(--red);border-radius:8px;padding:12px 16px;margin:12px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th{background:var(--bg-3);padding:10px 12px;text-align:left;font-weight:600;color:var(--text);border:1px solid var(--line)}
+td{padding:8px 12px;border:1px solid var(--line);color:var(--text-2)}
+tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+.module-card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:16px 0}
+.module-icon{font-size:28px;margin-bottom:8px}
+.module-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px}
+.module-tag{display:inline-block;background:linear-gradient(135deg,#7c5cff,#5b3df0);color:#fff;border-radius:6px;padding:2px 10px;font-size:12px;font-weight:600;margin-bottom:12px}
+.step-list{counter-reset:step;list-style:none;margin:12px 0}
+.step-list li{counter-increment:step;padding:8px 0 8px 40px;position:relative}
+.step-list li::before{content:counter(step);position:absolute;left:0;top:8px;width:28px;height:28px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.btn-demo{display:inline-block;background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:4px 12px;font-size:12px;color:var(--accent);margin:2px}
+.toc{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:32px}
+.toc-title{font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text)}
+.toc a{display:block;padding:6px 0;color:var(--text-2);text-decoration:none;font-size:14px;border-bottom:1px solid var(--line)}
+.toc a:hover{color:var(--primary)}
+.toc a:last-child{border-bottom:none}
+@media(max-width:480px){
+  body{padding:16px 12px}
+  h1{font-size:22px}
+  h2{font-size:17px}
+  h3{font-size:15px}
+  table{font-size:12px}
+  th,td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+
+<h1>📱 北京户外创作者工作台</h1>
+<p class="subtitle">使用说明书 v1.0 · 9大模块全功能指南</p>
+
+<div class="highlight">
+<p><b>🌐 APP 访问地址：</b><br>
+<code>https://shixiaotian886.github.io/outdoor-workbench/app/</code></p>
+<p><b>📱 安装到手机：</b>手机浏览器打开链接 → 浏览器菜单 →「添加到主屏幕」→ 桌面出现 APP 图标，点开即用</p>
+</div>
+
+<div class="toc">
+  <div class="toc-title">📑 目录</div>
+  <a href="#overview">一、APP 总览与导航</a>
+  <a href="#plan">二、模块1：每日选题工作流</a>
+  <a href="#calendar">三、模块2：内容日历</a>
+  <a href="#hot">四、模块3：爆款热点·二创</a>
+  <a href="#copy">五、模块4：双平台文案库</a>
+  <a href="#check">六、模块5：文案安检</a>
+  <a href="#bgm">七、模块6：热点 BGM</a>
+  <a href="#remix">八、模块7：路线二创</a>
+  <a href="#interact">九、模块8：粉丝互动话术库</a>
+  <a href="#review">十、模块9：数据复盘</a>
+  <a href="#sync">十一、云端同步与自动更新</a>
+  <a href="#faq">十二、常见问题</a>
+</div>
+
+<!-- ==================== 总览 ==================== -->
+<h2 id="overview">一、APP 总览与导航</h2>
+
+<h3>导航方式</h3>
+<table>
+<tr><th>设备</th><th>导航方式</th><th>说明</th></tr>
+<tr><td>电脑/平板</td><td>左侧侧边栏</td><td>9个模块按钮，点击切换</td></tr>
+<tr><td>手机</td><td>底部 Tab 栏</td><td>9个图标，左右滑动可查看更多</td></tr>
+<tr><td>手机（展开菜单）</td><td>左上角 ☰ 按钮</td><td>打开侧边栏抽屉</td></tr>
+</table>
+
+<h3>顶部功能栏</h3>
+<table>
+<tr><th>按钮</th><th>功能</th></tr>
+<tr><td>☰ 菜单</td><td>手机端打开侧边栏导航</td></tr>
+<tr><td>☁️ 云同步</td><td>手动触发云端数据同步（空闲/同步中/已同步/离线）</td></tr>
+<tr><td>🔍 搜索</td><td>全局搜索路线、文案、热点</td></tr>
+<tr><td>🔔 通知</td><td>通知中心</td></tr>
+</table>
+
+<h3>9 大模块一览</h3>
+<table>
+<tr><th>#</th><th>模块</th><th>核心功能</th></tr>
+<tr><td>1</td><td>📋 每日选题工作流</td><td>任务看板 + 时间表 + 选题决策</td></tr>
+<tr><td>2</td><td>🗓️ 内容日历</td><td>12个月路线规划 + 双平台文案</td></tr>
+<tr><td>3</td><td>🔥 爆款热点·二创</td><td>追热点 + 二创方法 + 违禁词</td></tr>
+<tr><td>4</td><td>✍️ 双平台文案库</td><td>AI生成 + 文案模板</td></tr>
+<tr><td>5</td><td>🛡️ 文案安检</td><td>违禁词扫描 + 替换建议</td></tr>
+<tr><td>6</td><td>🎵 热点 BGM</td><td>爆款背景音乐推荐</td></tr>
+<tr><td>7</td><td>🎬 路线二创</td><td>攻略→双平台文案转换</td></tr>
+<tr><td>8</td><td>💬 粉丝互动话术</td><td>评论→私信→加微信全流程</td></tr>
+<tr><td>9</td><td>📊 数据复盘</td><td>内容数据追踪 + 转化分析</td></tr>
+</table>
+
+<!-- ==================== 模块1 ==================== -->
+<h2 id="plan">二、模块1：每日选题工作流</h2>
+
+<div class="module-card">
+<div class="module-icon">📋</div>
+<div class="module-title">每日选题工作流</div>
+<span class="module-tag">日常运营核心</span>
+<p>每天的创作起点，从选题到发布到复盘，一站式管理。</p>
+</div>
+
+<h3>顶部数据卡片</h3>
+<table>
+<tr><th>指标</th><th>说明</th></tr>
+<tr><td>今日内容条数</td><td>今天计划发布的总条数</td></tr>
+<tr><td>已发布</td><td>已经完成的条数</td></tr>
+<tr><td>待完成</td><td>还没完成的条数</td></tr>
+<tr><td>完成率</td><td>已发布/总数的百分比</td></tr>
+</table>
+
+<h3>三栏任务看板</h3>
+<table>
+<tr><th>栏</th><th>时段</th><th>典型任务</th></tr>
+<tr><td>上午·发布</td><td>09:00-12:00</td><td>发小红书、发抖音</td></tr>
+<tr><td>下午·热点二创</td><td>14:00-17:00</td><td>追热点、二创内容</td></tr>
+<tr><td>晚上·运营复盘</td><td>19:00-22:00</td><td>回复评论、数据复盘</td></tr>
+</table>
+
+<h4>操作方法</h4>
+<ul>
+<li><b>勾选完成</b>：点击任务左边的圆圈，打勾表示完成</li>
+<li><b>删除任务</b>：点击任务右边的 × 按钮</li>
+</ul>
+
+<h3>⏰ 今日时间表</h3>
+<p>9个时间段，从早到晚的完整工作流安排，每个时段有具体任务和提示。</p>
+
+<h3>🧠 今日选题决策表</h3>
+<p>帮助您快速决策今天发什么内容，包含选题方向建议。</p>
+
+<h3>💬 评论区选题金矿</h3>
+<p>从评论区挖掘用户需求，转化为选题灵感。</p>
+
+<!-- ==================== 模块2 ==================== -->
+<h2 id="calendar">三、模块2：内容日历</h2>
+
+<div class="module-card">
+<div class="module-icon">🗓️</div>
+<div class="module-title">内容日历</div>
+<span class="module-tag">年度规划</span>
+<p>12个月 × 37条路线，每条都有小红书+抖音双平台文案，按季节自动标记当前/即将/归档。</p>
+</div>
+
+<h3>操作方法</h3>
+<ol class="step-list">
+<li>使用顶部 <code>‹</code> <code>›</code> 按钮切换月份</li>
+<li>查看当月推荐的路线列表</li>
+<li>每条路线包含：路线名、难度、适合季节、小红书标题+标签、抖音标题+标签+钩子</li>
+<li>标签说明：<code>[CURRENT]</code>当月 | <code>[NEXT]</code>下月 | <code>[SOON]</code>近期 | <code>[ARCHIVE]</code>已过季</li>
+</ol>
+
+<div class="tip">
+<b>💡 使用建议：</b>每周一查看当月路线，从中选择 2-3 条作为本周发布计划。过季路线不要发，流量会差。
+</div>
+
+<!-- ==================== 模块3 ==================== -->
+<h2 id="hot">四、模块3：爆款热点·二创</h2>
+
+<div class="module-card">
+<div class="module-icon">🔥</div>
+<div class="module-title">爆款热点 · 二创工作台</div>
+<span class="module-tag">蹭热点必备</span>
+<p>追踪当前热点 + 二创方法论 + 违禁词速查，三位一体。</p>
+</div>
+
+<h3>三大功能区</h3>
+
+<h4>1. 🔄 今日可追热点</h4>
+<p>每周自动更新5个季节性热点话题，每个都有切入角度建议。</p>
+<p><b>操作：</b>点击 <code>＋ 收录热点</code> 可手动添加自己发现的热点。</p>
+
+<h4>2. 🧪 二创方法速查</h4>
+<p>4种二创方法卡片，帮你快速找到蹭热点的角度。</p>
+
+<h4>3. 🚫 违禁词速查表</h4>
+<p>分3个Tab查看违禁词：</p>
+<table>
+<tr><th>Tab</th><th>内容</th><th>适用</th></tr>
+<tr><td>通用</td><td>14类违禁词</td><td>小红书+抖音都查</td></tr>
+<tr><td>小红书专属</td><td>6类违禁词</td><td>仅小红书</td></tr>
+<tr><td>抖音专属</td><td>6类违禁词</td><td>仅抖音</td></tr>
+</table>
+
+<!-- ==================== 模块4 ==================== -->
+<h2 id="copy">五、模块4：双平台文案库</h2>
+
+<div class="module-card">
+<div class="module-icon">✍️</div>
+<div class="module-title">双平台文案库</div>
+<span class="module-tag">AI 智能生成</span>
+<p>输入任意路线名，AI自动生成小红书+抖音双平台文案，自动过违禁词。</p>
+</div>
+
+<h3>🤖 AI 智能生成</h3>
+<ol class="step-list">
+<li>在输入框输入路线名，例如 <code>麻田岭露营</code> <code>北灵山徒步</code> <code>乌兰哈达火山</code></li>
+<li>点击 <code>✨ 生成文案</code> 按钮</li>
+<li>系统自动识别地点、海拔、难度等信息，生成双平台文案</li>
+<li>生成结果包含：小红书标题+正文+标签，抖音标题+正文+标签+钩子</li>
+<li>点击 <code>📋 复制</code> 直接复制到剪贴板</li>
+</ol>
+
+<div class="tip">
+<b>💡 支持17种活动类型：</b>徒步、露营、攀岩、骑行、滑雪、溯溪、摄影、观星、赏花、秋色、冰雪、温泉、古城、海岸、草原、火山、综合。
+</div>
+
+<h3>📚 文案库列表</h3>
+<p>预置37条路线×双平台=74套文案模板，可搜索查找。</p>
+<p><b>操作：</b>在搜索框输入路线名或月份，点击文案卡片查看详情，可一键复制。</p>
+
+<!-- ==================== 模块5 ==================== -->
+<h2 id="check">六、模块5：文案安检</h2>
+
+<div class="module-card">
+<div class="module-icon">🛡️</div>
+<div class="module-title">文案安检 · 违禁词扫描</div>
+<span class="module-tag">发布前必用</span>
+<p>发布前粘贴文案，一键扫描违禁词，给出替换建议。</p>
+</div>
+
+<h3>使用步骤</h3>
+<ol class="step-list">
+<li>选择平台：<code>两平台都查</code> / <code>小红书</code> / <code>抖音</code></li>
+<li>在文本框粘贴你的文案（标题+正文+标签都放进来）</li>
+<li>点击 <code>🔍 开始扫描</code></li>
+<li>右侧显示扫描结果：违禁词数量、具体词、所在位置、上下文、替换建议</li>
+<li>根据建议修改文案，重新扫描直到显示 <code>✅ 未发现违禁词</code></li>
+<li>点击 <code>清空</code> 可清除内容重新检查</li>
+</ol>
+
+<div class="warn">
+<b>⚠️ 重要：</b>每次发布前都必须过一遍安检！小红书和抖音对违禁词监管越来越严，轻则限流，重则封号。
+</div>
+
+<!-- ==================== 模块6 ==================== -->
+<h2 id="bgm">七、模块6：热点 BGM</h2>
+
+<div class="module-card">
+<div class="module-icon">🎵</div>
+<div class="module-title">热点 BGM · 爆款背景音乐</div>
+<span class="module-tag">每周自动更新</span>
+<p>12首当前热门BGM推荐，含热度指数、使用场景、节拍信息。</p>
+</div>
+
+<h3>筛选功能</h3>
+<p>点击顶部筛选标签，按类型筛选：</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin:12px 0">
+<span class="btn-demo">全部</span>
+<span class="btn-demo">抖音</span>
+<span class="btn-demo">小红书</span>
+<span class="btn-demo">治愈</span>
+<span class="btn-demo">励志</span>
+<span class="btn-demo">古风</span>
+</div>
+
+<h3>BGM 卡片信息</h3>
+<table>
+<tr><th>字段</th><th>说明</th></tr>
+<tr><td>歌名 + 歌手</td><td>BGM基本信息</td></tr>
+<tr><td>🔥 热度</td><td>热度指数（万），越高越火</td></tr>
+<tr><td>平台标签</td><td>这首歌在哪个平台更火</td></tr>
+<tr><td>状态</td><td>上升/长尾/热门</td></tr>
+<tr><td>📍 使用场景</td><td>适合什么类型的内容</td></tr>
+<tr><td>🎵 情绪 / ⚡ BPM / ⏱ 时长</td><td>音乐属性信息</td></tr>
+<tr><td>💡 使用技巧</td><td>这首歌怎么用效果好</td></tr>
+</table>
+
+<h4>操作</h4>
+<ul>
+<li><code>🎧 试听</code>：跳转到试听页面</li>
+<li><code>📋 复制歌名</code>：复制歌名+歌手，方便在抖音/小红书搜索</li>
+</ul>
+
+<h3>💡 BGM 使用技巧</h3>
+<p>5个技巧卡片，教你如何正确使用BGM提升完播率。</p>
+
+<!-- ==================== 模块7 ==================== -->
+<h2 id="remix">八、模块7：路线二创</h2>
+
+<div class="module-card">
+<div class="module-icon">🎬</div>
+<div class="module-title">路线二创 · 攻略转文案</div>
+<span class="module-tag">一键生成</span>
+<p>粘贴任意路线攻略，自动提取关键信息，生成双平台可直接发布的文案。</p>
+</div>
+
+<h3>使用步骤</h3>
+<ol class="step-list">
+<li>在左侧文本框粘贴路线攻略（自己整理的或其他博主的素材都可以）</li>
+<li>选择内容风格：<code>种草安利</code> / <code>实用攻略</code> / <code>vlog叙事</code></li>
+<li>点击 <code>✨ 一键生成双平台文案</code></li>
+<li>右侧自动显示：提取的路线信息 + 小红书文案 + 抖音文案</li>
+<li>每段文案都自动过违禁词扫描，有问题的会标红提示</li>
+<li>点击 <code>📋 复制小红书</code> 或 <code>📋 复制抖音</code> 直接使用</li>
+</ol>
+
+<div class="tip">
+<b>💡 攻略内容建议包含：</b>地点名、海拔、距离、爬升、难度、亮点、季节、注意事项。系统会自动提取这些信息生成文案。
+</div>
+
+<!-- ==================== 模块8 ==================== -->
+<h2 id="interact">九、模块8：粉丝互动话术库</h2>
+
+<div class="module-card">
+<div class="module-icon">💬</div>
+<div class="module-title">粉丝互动话术库</div>
+<span class="module-tag">评论→私信→微信全流程</span>
+<p>66条预检话术，覆盖评论回复、私信引导、加微信3个阶段，全部避开违禁词。</p>
+</div>
+
+<h3>转化漏斗示意</h3>
+<p>页面顶部展示完整转化路径：</p>
+<div class="highlight" style="text-align:center;font-size:13px">
+📝 发布内容 → 💬 评论回复 → 📨 私信沟通 → 🔗 加微信
+</div>
+
+<h3>筛选功能</h3>
+<table>
+<tr><th>筛选维度</th><th>选项</th></tr>
+<tr><td>场景阶段</td><td>全部 / 评论回复 / 私信引导 / 加微信</td></tr>
+<tr><td>平台切换</td><td>📕 小红书 / 🎵 抖音</td></tr>
+</table>
+
+<h3>话术卡片结构</h3>
+<table>
+<tr><th>部分</th><th>说明</th></tr>
+<tr><td>场景图标+名称</td><td>当前话术适用的场景</td></tr>
+<tr><td>场景描述</td><td>用户问了什么问题</td></tr>
+<tr><td>💡 意图</td><td>这条话术要达到什么目的</td></tr>
+<tr><td>话术1/2/3</td><td>每个场景3条备选话术，挑一条用</td></tr>
+<tr><td>⚠️含违禁词</td><td>黄色标记，说明这条话术有问题（正常情况不会出现）</td></tr>
+</table>
+
+<h4>每条话术的操作</h4>
+<ul>
+<li><code>📋 复制</code>：一键复制话术到剪贴板，直接粘贴到评论/私信</li>
+<li><code>🔍 查违禁词</code>：单独检查这条话术有没有违禁词</li>
+</ul>
+
+<h3>11个场景覆盖</h3>
+<table>
+<tr><th>#</th><th>场景</th><th>阶段</th></tr>
+<tr><td>1</td><td>用户问路线详情/怎么报名</td><td>评论回复</td></tr>
+<tr><td>2</td><td>用户问难度/适合新手吗</td><td>评论回复</td></tr>
+<tr><td>3</td><td>用户问价格/费用</td><td>评论回复</td></tr>
+<tr><td>4</td><td>用户问时间/哪天出发</td><td>评论回复</td></tr>
+<tr><td>5</td><td>用户说已私信/求回复</td><td>评论回复</td></tr>
+<tr><td>6</td><td>私信中发送路线详情</td><td>私信引导</td></tr>
+<tr><td>7</td><td>私信中回答装备/准备问题</td><td>私信引导</td></tr>
+<tr><td>8</td><td>私信中发送报名表/确认信息</td><td>私信引导</td></tr>
+<tr><td>9</td><td>引导加微信（安全话术）</td><td>加微信</td></tr>
+<tr><td>10</td><td>主动发送联系方式（图片方式）</td><td>加微信</td></tr>
+<tr><td>11</td><td>用户已加微信后的欢迎话术</td><td>加微信</td></tr>
+</table>
+
+<div class="danger">
+<b>🚫 平台规则红线：</b>小红书和抖音都禁止在评论/正文中直接出现微信号、手机号。正确做法：评论引导到私信，私信中用图片发联系方式。所有话术已按此规则设计好。
+</div>
+
+<h3>💡 互动转化技巧</h3>
+<p>8条技巧卡片，包含季节性提醒（当前夏季：避暑+雷阵雨）和转化方法论。</p>
+
+<!-- ==================== 模块9 ==================== -->
+<h2 id="review">十、模块9：数据复盘</h2>
+
+<div class="module-card">
+<div class="module-icon">📊</div>
+<div class="module-title">数据复盘</div>
+<span class="module-tag">数据驱动优化</span>
+<p>记录每条内容的播放量、点赞、收藏、评论、互动率、报名转化，复盘优化。</p>
+</div>
+
+<h3>复盘卡片字段</h3>
+<table>
+<tr><th>指标</th><th>说明</th></tr>
+<tr><td>内容主题</td><td>这条内容的标题</td></tr>
+<tr><td>平台</td><td>小红书 / 抖音</td></tr>
+<tr><td>播放量</td><td>总播放/阅读量</td></tr>
+<tr><td>点赞 / 收藏 / 评论</td><td>互动数据</td></tr>
+<tr><td>互动率 %</td><td>(点赞+收藏+评论)/播放量</td></tr>
+<tr><td>报名转化（私信数）</td><td>有多少人私信咨询 = 实际转化</td></tr>
+<tr><td>复盘要点</td><td>哪些做得好，下次怎么改进</td></tr>
+</table>
+
+<h3>操作</h3>
+<ul>
+<li>点击 <code>＋ 新增复盘</code> 添加新的复盘记录</li>
+<li>填入数据和复盘要点，保存</li>
+<li>复盘数据保存在本地，换设备不会同步</li>
+</ul>
+
+<!-- ==================== 云端同步 ==================== -->
+<h2 id="sync">十一、云端同步与自动更新</h2>
+
+<h3>☁️ 云端同步</h3>
+<p>APP 打开时自动从云端拉取最新数据，也可手动点击右上角 <code>☁️</code> 按钮触发同步。</p>
+<table>
+<tr><th>图标</th><th>状态</th><th>说明</th></tr>
+<tr><td>☁️</td><td>空闲</td><td>可以点击同步</td></tr>
+<tr><td>⏳</td><td>同步中</td><td>正在拉取云端数据</td></tr>
+<tr><td>✅</td><td>已同步</td><td>数据是最新的</td></tr>
+<tr><td>⚠️</td><td>离线</td><td>网络不通，使用本地缓存</td></tr>
+</table>
+
+<h3>🔄 GitHub Actions 自动更新</h3>
+<p><b>每周一北京时间上午9点</b>，系统自动运行更新脚本，无需您操作。</p>
+<table>
+<tr><th>更新内容</th><th>更新逻辑</th></tr>
+<tr><td>BGM 热度</td><td>每周衰减2%，尝试从API拉取新歌，保留Top20</td></tr>
+<tr><td>违禁词</td><td>如有新违禁词，自动合并到列表</td></tr>
+<tr><td>日历标签</td><td>根据当前月份，自动标记当月/下月/近期/归档</td></tr>
+<tr><td>热门话题</td><td>按季节选择5个话题，每周轮换</td></tr>
+<tr><td>互动话术技巧</td><td>按季节替换技巧卡片（春赏花/夏避暑/秋红叶/冬冰雪）</td></tr>
+</table>
+
+<div class="tip">
+<b>💡 数据缓存机制：</b>所有云端数据会缓存在本地，即使没有网络也能正常使用（显示上次缓存的内容）。联网后自动更新。
+</div>
+
+<!-- ==================== FAQ ==================== -->
+<h2 id="faq">十二、常见问题</h2>
+
+<h3>Q1：APP 打不开或加载很慢？</h3>
+<p>检查网络连接，尝试切换 Wi-Fi/流量。APP 支持离线使用，如果有缓存数据即使没网也能打开。</p>
+
+<h3>Q2：数据会丢失吗？</h3>
+<p>任务看板、数据复盘的数据保存在手机本地（localStorage），只要不清除浏览器缓存就不会丢。云端配置数据（日历、违禁词、BGM等）每次打开APP自动同步。</p>
+
+<h3>Q3：换手机后数据还在吗？</h3>
+<p>云端数据（日历、违禁词、BGM、话术等）会自动同步，所有设备一致。但任务看板和数据复盘是本地存储，换设备后需要重新填写。</p>
+
+<h3>Q4：AI 生成的文案可以直接发布吗？</h3>
+<p>可以！AI生成的文案已经过违禁词扫描，但建议发布前再用「文案安检」模块过一遍，确保万无一失。</p>
+
+<h3>Q5：怎么更新 APP？</h3>
+<p>无需手动更新。代码更新后重新打开APP会自动加载最新版。数据更新每周一自动进行，刷新即可看到新内容。</p>
+
+<h3>Q6：话术里的"联系方式"怎么发？</h3>
+<p>把微信号写在手机备忘录里，截图发送。或发带二维码的图片。平台无法识别图片中的文字，最安全。</p>
+
+<h3>Q7：新增路线或修改内容怎么办？</h3>
+<p>联系我，告诉我要添加或修改的内容，我直接修改代码和云端配置，推送到 GitHub 后您刷新APP就能看到更新。</p>
+
+<hr style="margin:40px 0;border:none;border-top:1px solid var(--line)">
+<p style="text-align:center;color:var(--text-3);font-size:13px">
+北京户外创作者工作台 · 使用说明书 v1.0<br>
+更新日期：2026年7月25日<br>
+如有问题随时联系
+</p>
+
+</body>
+</html>
