@@ -1,40 +1,40 @@
 {
-  "version": "2026.08.03",
-  "updated": "2026-08-03",
+  "version": "2026.08.10",
+  "updated": "2026-08-10",
   "data": [
     {
-      "id": "hot3200",
-      "title": "Family Outing searches exploding",
-      "from": "xiaohongshu",
-      "angle": "Create 'Where to take kids? Beijing top 5 family routes' photo collection",
-      "icon": "???????"
-    },
-    {
-      "id": "hot3201",
+      "id": "hot3300",
       "title": "Healing Vlog BGM going viral",
       "from": "douyin",
       "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
       "icon": "?"
     },
     {
-      "id": "hot3202",
+      "id": "hot3301",
       "title": "Budget Travel topic hot",
       "from": "xiaohongshu",
       "angle": "Create 'Only XX yuan per person, Beijing day trip' series highlighting value",
       "icon": "?"
     },
     {
-      "id": "hot3203",
+      "id": "hot3302",
       "title": "Weekend Escape topic trending",
       "from": "douyin+xiaohongshu",
       "angle": "Create 'Beijing departure X hours, N weekend getaways' series, rotate different routes weekly",
       "icon": "?"
     },
     {
-      "id": "hot3204",
+      "id": "hot3303",
       "title": "Worker's Weekend Vlog topic rising",
       "from": "xiaohongshu",
       "angle": "Film office-to-outdoors contrast: first 3s cubicle, then mountains/grassland/beach",
+      "icon": "?"
+    },
+    {
+      "id": "hot3304",
+      "title": "Reverse Tourism avoiding crowds",
+      "from": "douyin",
+      "angle": "Create 'Don't go to XX, try these N hidden spots near Beijing' series",
       "icon": "?"
     }
   ]
