@@ -1,41 +1,41 @@
 {
-  "version": "2026.08.24",
-  "updated": "2026-08-24",
+  "version": "2026.08.31",
+  "updated": "2026-08-31",
   "data": [
     {
-      "id": "hot3500",
-      "title": "Weekend Escape topic trending",
-      "from": "douyin+xiaohongshu",
-      "angle": "Create 'Beijing departure X hours, N weekend getaways' series, rotate different routes weekly",
-      "icon": "?"
-    },
-    {
-      "id": "hot3501",
+      "id": "hot3600",
       "title": "Worker's Weekend Vlog topic rising",
       "from": "xiaohongshu",
       "angle": "Film office-to-outdoors contrast: first 3s cubicle, then mountains/grassland/beach",
       "icon": "?"
     },
     {
-      "id": "hot3502",
+      "id": "hot3601",
       "title": "Reverse Tourism avoiding crowds",
       "from": "douyin",
       "angle": "Create 'Don't go to XX, try these N hidden spots near Beijing' series",
       "icon": "?"
     },
     {
-      "id": "hot3503",
+      "id": "hot3602",
       "title": "Heatwave Escape searches surging",
       "from": "douyin",
       "angle": "Create 'Beijing 40C? N cool routes to escape' series",
       "icon": "?"
     },
     {
-      "id": "hot3504",
+      "id": "hot3603",
       "title": "Family Outing searches exploding",
       "from": "xiaohongshu",
       "angle": "Create 'Where to take kids? Beijing top 5 family routes' photo collection",
       "icon": "???????"
+    },
+    {
+      "id": "hot3604",
+      "title": "Healing Vlog BGM going viral",
+      "from": "douyin",
+      "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
+      "icon": "?"
     }
   ]
 }
