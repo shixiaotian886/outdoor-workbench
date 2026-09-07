@@ -1,6 +1,6 @@
 {
-  "version": "2026.08.31",
-  "updated": "2026-08-31",
+  "version": "2026.09.07",
+  "updated": "2026-09-07",
   "data": {
     "scenes": [
       {
@@ -204,13 +204,13 @@
     ],
     "tips": [
       {
-        "title": "Heatwave escape angle",
-        "desc": "Jun-Aug: emphasize 'cool escape' in comments, mention temperature difference at high altitude",
+        "title": "Autumn foliage season",
+        "desc": "Sep-Nov: highlight red leaves, golden grasslands in comments, mention 'peak color this week'",
         "tag": "seasonal"
       },
       {
-        "title": "Summer thunderstorm reminder",
-        "desc": "Remind about afternoon thunderstorms, mention we monitor weather and have backup plans",
+        "title": "Layer-up reminder",
+        "desc": "Big temperature swing in mountains, remind to bring warm layers",
         "tag": "safety"
       },
       {

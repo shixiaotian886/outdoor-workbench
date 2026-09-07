@@ -1,40 +1,40 @@
 {
-  "version": "2026.08.31",
-  "updated": "2026-08-31",
+  "version": "2026.09.07",
+  "updated": "2026-09-07",
   "data": [
     {
-      "id": "hot3600",
-      "title": "Worker's Weekend Vlog topic rising",
-      "from": "xiaohongshu",
-      "angle": "Film office-to-outdoors contrast: first 3s cubicle, then mountains/grassland/beach",
-      "icon": "?"
-    },
-    {
-      "id": "hot3601",
+      "id": "hot3700",
       "title": "Reverse Tourism avoiding crowds",
       "from": "douyin",
       "angle": "Create 'Don't go to XX, try these N hidden spots near Beijing' series",
       "icon": "?"
     },
     {
-      "id": "hot3602",
-      "title": "Heatwave Escape searches surging",
-      "from": "douyin",
-      "angle": "Create 'Beijing 40C? N cool routes to escape' series",
+      "id": "hot3701",
+      "title": "Early Autumn Hiking topic rising",
+      "from": "xiaohongshu",
+      "angle": "Create 'Beijing autumn N hiking routes' photo collection, each route as separate detailed post",
       "icon": "?"
     },
     {
-      "id": "hot3603",
-      "title": "Family Outing searches exploding",
-      "from": "xiaohongshu",
-      "angle": "Create 'Where to take kids? Beijing top 5 family routes' photo collection",
-      "icon": "???????"
+      "id": "hot3702",
+      "title": "Red Leaves Season preheating",
+      "from": "douyin+xiaohongshu",
+      "angle": "Post teaser 2 weeks early: 'Expected peak on X date', build anticipation",
+      "icon": "?"
     },
     {
-      "id": "hot3604",
+      "id": "hot3703",
       "title": "Healing Vlog BGM going viral",
       "from": "douyin",
       "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
+      "icon": "?"
+    },
+    {
+      "id": "hot3704",
+      "title": "Budget Travel topic hot",
+      "from": "xiaohongshu",
+      "angle": "Create 'Only XX yuan per person, Beijing day trip' series highlighting value",
       "icon": "?"
     }
   ]
