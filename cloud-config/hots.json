@@ -1,40 +1,40 @@
 {
-  "version": "2026.09.07",
-  "updated": "2026-09-07",
+  "version": "2026.09.14",
+  "updated": "2026-09-14",
   "data": [
     {
-      "id": "hot3700",
-      "title": "Reverse Tourism avoiding crowds",
-      "from": "douyin",
-      "angle": "Create 'Don't go to XX, try these N hidden spots near Beijing' series",
-      "icon": "?"
-    },
-    {
-      "id": "hot3701",
+      "id": "hot3800",
       "title": "Early Autumn Hiking topic rising",
       "from": "xiaohongshu",
       "angle": "Create 'Beijing autumn N hiking routes' photo collection, each route as separate detailed post",
       "icon": "?"
     },
     {
-      "id": "hot3702",
+      "id": "hot3801",
       "title": "Red Leaves Season preheating",
       "from": "douyin+xiaohongshu",
       "angle": "Post teaser 2 weeks early: 'Expected peak on X date', build anticipation",
       "icon": "?"
     },
     {
-      "id": "hot3703",
+      "id": "hot3802",
       "title": "Healing Vlog BGM going viral",
       "from": "douyin",
       "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
       "icon": "?"
     },
     {
-      "id": "hot3704",
+      "id": "hot3803",
       "title": "Budget Travel topic hot",
       "from": "xiaohongshu",
       "angle": "Create 'Only XX yuan per person, Beijing day trip' series highlighting value",
+      "icon": "?"
+    },
+    {
+      "id": "hot3804",
+      "title": "Weekend Escape topic trending",
+      "from": "douyin+xiaohongshu",
+      "angle": "Create 'Beijing departure X hours, N weekend getaways' series, rotate different routes weekly",
       "icon": "?"
     }
   ]
