@@ -1,40 +1,40 @@
 {
-  "version": "2026.09.14",
-  "updated": "2026-09-14",
+  "version": "2026.09.21",
+  "updated": "2026-09-21",
   "data": [
     {
-      "id": "hot3800",
-      "title": "Early Autumn Hiking topic rising",
-      "from": "xiaohongshu",
-      "angle": "Create 'Beijing autumn N hiking routes' photo collection, each route as separate detailed post",
-      "icon": "?"
-    },
-    {
-      "id": "hot3801",
+      "id": "hot3900",
       "title": "Red Leaves Season preheating",
       "from": "douyin+xiaohongshu",
       "angle": "Post teaser 2 weeks early: 'Expected peak on X date', build anticipation",
       "icon": "?"
     },
     {
-      "id": "hot3802",
+      "id": "hot3901",
       "title": "Healing Vlog BGM going viral",
       "from": "douyin",
       "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
       "icon": "?"
     },
     {
-      "id": "hot3803",
+      "id": "hot3902",
       "title": "Budget Travel topic hot",
       "from": "xiaohongshu",
       "angle": "Create 'Only XX yuan per person, Beijing day trip' series highlighting value",
       "icon": "?"
     },
     {
-      "id": "hot3804",
+      "id": "hot3903",
       "title": "Weekend Escape topic trending",
       "from": "douyin+xiaohongshu",
       "angle": "Create 'Beijing departure X hours, N weekend getaways' series, rotate different routes weekly",
+      "icon": "?"
+    },
+    {
+      "id": "hot3904",
+      "title": "Worker's Weekend Vlog topic rising",
+      "from": "xiaohongshu",
+      "angle": "Film office-to-outdoors contrast: first 3s cubicle, then mountains/grassland/beach",
       "icon": "?"
     }
   ]
