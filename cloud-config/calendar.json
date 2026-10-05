@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "updated": "2026-09-07",
+  "updated": "2026-10-05",
   "data": [
     {
       "month": "1月",
-      "theme": "[ARCHIVE] 冰瀑·雪景·温泉徒步",
+      "theme": "[SOON] 冰瀑·雪景·温泉徒步",
       "routes": [
         {
           "name": "龙庆峡冰灯节",
@@ -292,7 +292,7 @@
     },
     {
       "month": "9月",
-      "theme": "[CURRENT] 早秋·长城日出·草原渐黄",
+      "theme": "[ARCHIVE] 早秋·长城日出·草原渐黄",
       "routes": [
         {
           "name": "金山岭长城日出",
@@ -328,7 +328,7 @@
     },
     {
       "month": "10月",
-      "theme": "[NEXT] 红叶（黄金月）·银杏·国庆",
+      "theme": "[CURRENT] 红叶（黄金月）·银杏·国庆",
       "routes": [
         {
           "name": "坡峰岭红叶",
@@ -374,7 +374,7 @@
     },
     {
       "month": "11月",
-      "theme": "[SOON] 银杏·初雪·温泉",
+      "theme": "[NEXT] 银杏·初雪·温泉",
       "routes": [
         {
           "name": "故宫银杏+角楼",

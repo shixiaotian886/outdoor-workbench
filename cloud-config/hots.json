@@ -1,40 +1,40 @@
 {
-  "version": "2026.09.28",
-  "updated": "2026-09-28",
+  "version": "2026.10.05",
+  "updated": "2026-10-05",
   "data": [
     {
-      "id": "hot4000",
-      "title": "Healing Vlog BGM going viral",
-      "from": "douyin",
-      "angle": "BGM remix: edit past hiking/camping/group footage with trending BGM",
-      "icon": "?"
-    },
-    {
-      "id": "hot4001",
+      "id": "hot4100",
       "title": "Budget Travel topic hot",
       "from": "xiaohongshu",
       "angle": "Create 'Only XX yuan per person, Beijing day trip' series highlighting value",
       "icon": "?"
     },
     {
-      "id": "hot4002",
+      "id": "hot4101",
       "title": "Weekend Escape topic trending",
       "from": "douyin+xiaohongshu",
       "angle": "Create 'Beijing departure X hours, N weekend getaways' series, rotate different routes weekly",
       "icon": "?"
     },
     {
-      "id": "hot4003",
+      "id": "hot4102",
       "title": "Worker's Weekend Vlog topic rising",
       "from": "xiaohongshu",
       "angle": "Film office-to-outdoors contrast: first 3s cubicle, then mountains/grassland/beach",
       "icon": "?"
     },
     {
-      "id": "hot4004",
+      "id": "hot4103",
       "title": "Reverse Tourism avoiding crowds",
       "from": "douyin",
       "angle": "Create 'Don't go to XX, try these N hidden spots near Beijing' series",
+      "icon": "?"
+    },
+    {
+      "id": "hot4104",
+      "title": "Early Autumn Hiking topic rising",
+      "from": "xiaohongshu",
+      "angle": "Create 'Beijing autumn N hiking routes' photo collection, each route as separate detailed post",
       "icon": "?"
     }
   ]
